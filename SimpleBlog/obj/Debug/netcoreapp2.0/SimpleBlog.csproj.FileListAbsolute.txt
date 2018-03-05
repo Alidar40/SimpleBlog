@@ -1,0 +1,12 @@
+D:\Univer\Frontend\SimpleBlog\SimpleBlog\bin\Debug\netcoreapp2.0\SimpleBlog.deps.json
+D:\Univer\Frontend\SimpleBlog\SimpleBlog\bin\Debug\netcoreapp2.0\SimpleBlog.runtimeconfig.json
+D:\Univer\Frontend\SimpleBlog\SimpleBlog\bin\Debug\netcoreapp2.0\SimpleBlog.runtimeconfig.dev.json
+D:\Univer\Frontend\SimpleBlog\SimpleBlog\bin\Debug\netcoreapp2.0\SimpleBlog.dll
+D:\Univer\Frontend\SimpleBlog\SimpleBlog\bin\Debug\netcoreapp2.0\SimpleBlog.pdb
+D:\Univer\Frontend\SimpleBlog\SimpleBlog\obj\Debug\netcoreapp2.0\SimpleBlog.csprojResolveAssemblyReference.cache
+D:\Univer\Frontend\SimpleBlog\SimpleBlog\obj\Debug\netcoreapp2.0\SimpleBlog.csproj.CoreCompileInputs.cache
+D:\Univer\Frontend\SimpleBlog\SimpleBlog\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
+D:\Univer\Frontend\SimpleBlog\SimpleBlog\obj\Debug\netcoreapp2.0\SimpleBlog.AssemblyInfoInputs.cache
+D:\Univer\Frontend\SimpleBlog\SimpleBlog\obj\Debug\netcoreapp2.0\SimpleBlog.AssemblyInfo.cs
+D:\Univer\Frontend\SimpleBlog\SimpleBlog\obj\Debug\netcoreapp2.0\SimpleBlog.dll
+D:\Univer\Frontend\SimpleBlog\SimpleBlog\obj\Debug\netcoreapp2.0\SimpleBlog.pdb

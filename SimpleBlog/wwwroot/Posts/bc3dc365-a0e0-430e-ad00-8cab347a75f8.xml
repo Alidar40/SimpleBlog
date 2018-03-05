@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<post>
+  <title>Tutorials that i recommend</title>
+  <slug>tuts-i-recommend</slug>
+  <pubDate>2018-03-04 21:43:19</pubDate>
+  <lastModified>2018-03-04 21:50:29</lastModified>
+  <excerpt>I will share with you tutorials that helped me when i started learning  .NET framework</excerpt>
+  <content>&lt;p&gt;First of all that you must to absorb is &lt;a href="https://www.amazon.com/CLR-via-4th-Developer-Reference/dp/0735667454"&gt;Jeffrey Richter's book "CLR via C#"&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;I really recommend &lt;a href="https://programmingwithmosh.com/courses/"&gt;Mosh Hamedani's cources&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;For russian-speaking readaers i want to recommend a &lt;a href="https://metanit.com/sharp/aspnet5/"&gt;METANIT&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;</content>
+  <comments>
+    <comment isAdmin="false" id="15284cee-be97-4e85-8704-8c22bae2c954">
+      <author>John Ember</author>
+      <email>johnember@unexistingmail.com</email>
+      <date>2018-03-04 18:44:51</date>
+      <content>Thanks you!! Helped a lot!</content>
+    </comment>
+    <comment isAdmin="false" id="86b93661-f940-49c6-a610-e9e56530eee2">
+      <author>Hate Speech</author>
+      <email>hate@speech.com</email>
+      <date>2018-03-04 18:47:53</date>
+      <content>WHAT A HECK DUDE? In your own blog you must create your OWN tutorials, but NOT REFER TO EXISTING ONES!!!!!</content>
+    </comment>
+    <comment isAdmin="true" id="8e48ac47-8e78-42bb-9191-f02af345c36e">
+      <author>Alidar Asvarov</author>
+      <email>alidar.asvarov@simpleblog.com</email>
+      <date>2018-03-04 18:50:29</date>
+      <content>Post about Claim Identity comming soom</content>
+    </comment>
+  </comments>
+</post>

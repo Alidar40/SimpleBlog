@@ -1,0 +1,121 @@
+﻿@using System.Linq
+@using SimpleBlog.Models;
+@model Article
+
+<section id="comments">
+    <div class="container">
+        <h2>Comments</h2>
+        @foreach (var comment in Model.Comments)
+        {
+            <article id="@comment.Id" class="@(comment.IsAdmin ? "admin" : null)" itemprop="comment" itemscope itemtype="http://schema.org/Comment">
+                <div>
+                    @if (comment.Author == "Alidar Asvarov")
+                    {
+                        <p style="float: left; width: 95px"><img alt="@comment.Author" width="80" height="80" src="~/images/admin_avatar_800x800.jpg" /></p>
+                    }
+                    else
+                    {
+                        <p style="float: left; width: 95px"><img alt="@comment.Author" width="80" height="80" src="~/images/avatar300x300.png" /></p>
+                    }
+                    
+                    
+                    <div class="content">
+
+                        @if (comment.Author == "Alidar Asvarov")
+                        {
+                            <p itemprop="name" class="text-danger"><strong>@comment.Author</strong></p>
+                        }
+                        else
+                        {
+                            <p itemprop="name"><strong>@comment.Author</strong></p>
+                        }
+
+                        <pre cols='60' rows='8'>@comment.RenderContent()</pre>
+
+                        <p>
+                        <time datetime="@comment.PubDate.ToString("s")" itemprop="datePublished">
+                        <a href="#@comment.Id" title="Permalink (#@comment.Id)">@comment.PubDate.ToString("MMMM d, yyyy")</a>
+                            </time>
+                        </p>
+
+                        @if (User.Identity.IsAuthenticated)
+                        {
+                        <a class="noline" href="mailto:@comment.Email" title="Send email to @comment.Email">&#x2709;</a>
+                        <a class="delete noline" asp-controller="Blog" asp-Action="DeleteComment" asp-route-articleid="@Model.Id" asp-route-commentid="@comment.Id" asp-route-afrt="@ViewData["afrt"]" title="Delete the comment...">Delete...</a>
+                        }
+
+                        <br />
+                        <br />
+                        <br />
+
+                    </div>
+                </div>
+            </article>
+
+        }
+
+        
+        @if (Model.Comments.Count == 0)
+        {
+            <p>Be the first to post a comment</p>
+        }
+
+        <form method="post" asp-controller="Blog" asp-action="AddComment" asp-route-articleid="@Model.Id" asp-antiforgery="false">
+            <h3>Post a comment</h3>
+            <div asp-validation-summary="All" class="text-danger"></div>
+            <br />
+            @if (!User.Identity.IsAuthenticated)
+            {
+                <label for="textArea" class="col-lg-1 control-label">Comment</label>
+                <div class="col-lg-15">
+                    <textarea id="content textArea" name="content" class="form-control" rows="5" required placeholder="Enter your comment here..."></textarea>
+                </div>
+
+            <div class="details form-group">
+
+                <label for="author" class="col-lg-1 control-label">Name</label>
+                <input id="author"  name="author" placeholder="Your name" class="form-control" required/>
+                
+                <br />
+                
+                <label asp-for="Comments.FirstOrDefault().Email" for="email" class="col-lg-1 control-label">E-mail</label>
+                <input asp-for="Comments.FirstOrDefault().Email" id="email" name="email" placeholder="Example: mary@outlook.com" class="form-control" required/>
+                <span asp-validation-for="Comments.FirstOrDefault().Email" class="text-danger"></span>
+
+                <br />
+
+                <button class="btn btn-primary" type="submit" value="Post comment">Post comment</button>
+
+                <!-- This element is being removed by site.js. It is to prevent comment spam-->
+                <input type="hidden" name="website" />
+            </div>
+            }
+            else
+            {
+                <label for="textArea" class="col-lg-1 control-label">Comment</label>
+                <div class="col-lg-15">
+                    <textarea id="content textArea" name="content" class="form-control" rows="5" required placeholder="Enter your comment here..."></textarea>
+                </div>
+            
+                <div class="details form-group">
+
+                    <input type="hidden" id="author" name="author" value="Alidar Asvarov" required />
+
+                    <input type="hidden" id="email" name="email" value="alidar.asvarov@simpleblog.com" required />
+
+                    <br />
+                    <button class="btn btn-primary" type="submit" value="Post comment">Post comment</button>
+
+                    <!-- This element is being removed by site.js. It is to prevent comment spam-->
+                    <input type="hidden" name="website" />
+                </div>
+
+            }
+        </form>
+
+        <noscript>
+            <br />
+            <p>Enable JavaScript to post comments on this blog.</p>
+        </noscript>
+    </div>
+</section>

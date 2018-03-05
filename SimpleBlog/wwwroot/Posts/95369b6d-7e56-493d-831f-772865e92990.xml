@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<post>
+  <title>Introduction</title>
+  <slug>introduction</slug>
+  <pubDate>2018-03-04 21:31:11</pubDate>
+  <lastModified>2018-03-04 21:31:11</lastModified>
+  <excerpt>Let's talk about this blog...</excerpt>
+  <content>&lt;p&gt;Hello, world!&lt;/p&gt;
+&lt;p&gt;Today, 4th march 2018, I starting my blog! This blog will be devoted to .NET framework. I want to share my knowledge about this stack of technologies. Many people giving up at the beginning. Why this happens? Because of lack of intelligible tutorials, courses, blogs, peoples, who want to share their knowledge. I decided to improve that situation.&lt;/p&gt;
+&lt;p&gt;So, let's get started!&lt;/p&gt;</content>
+  <comments></comments>
+</post>
